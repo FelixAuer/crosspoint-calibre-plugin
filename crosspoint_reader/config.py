@@ -76,6 +76,9 @@ class CrossPointConfigWidget(QWidget):
     def _refresh_logs(self):
         self.log_view.setPlainText(get_log_text())
 
+    def validate(self):
+        return True
+
 
 class CrossPointConfigDialog(QDialog):
     def __init__(self, parent=None):
